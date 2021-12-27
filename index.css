@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'Font title';
+    src: url(font/AphroditeSlim/Aphrodite\ Slim\ Pro.ttf);
+}
+
+#popup {
+    height: 95vh;
+    width: 100%;
+    background-image: url(img/bg/bg-content.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 0;
+}
+.popup-body{
+    height: 85vh;
+    width: 85%;
+    background-color: rgba(240, 248, 255, 0.39);
+    margin: 0 auto;
+}
+
+.popup-body img,
+.popup-body h2, p, a {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    transform: translate(-50%);
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.popup-body h2 {
+    text-align: center;
+    width: 300px;
+    font-family: "Font title";
+    text-shadow: 1px 1px 2px rgb(245, 201, 121);
+    font-weight: 600;
+    letter-spacing: 1px;
+    top: 230px;
+}
+
+.popup-body p {
+    text-align: center;
+    font-weight: 600;
+    width: 300px;
+    top: 290px;
+}
+
+.popup-body .invite {
+    width: 300px;
+    text-align: center;
+    top: 340px;
+    font-size: 12px;
+}
+
+.popup-body a {
+    color: rgb(250, 213, 144);
+    font-weight: 600;
+    top: 420px;
+    background-color: rgb(41, 41, 41);
+    padding: 10px 15px;
+    border-radius: 10px;
+}

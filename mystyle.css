@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Font h2';
+    src: url(font/AphroditeSlim/Aphrodite\ Slim\ Pro.ttf);
+}
+
+body {
+    background-color: #EEDFCA;
+}
+
+.audio audio {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 20px;
+    margin: auto;
+    color: #f04747;
+}
+
+.heading {
+    height: 500px;
+    width: 100%;
+    background-image: url(img/header.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(to top, #EEDFCA, #eedfca1e, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+
+/* PEMBUKAAN */
+#pembukaan {
+    height: 500px;
+}
+.section .pembukaan img {
+    margin-top: 10px;
+    max-width: 200px;
+}
+.section h1 {
+    font-family: 'Font h2';
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #303030;
+    text-shadow: 0 2px 3px rgb(179, 178, 176);
+}
+.section .undang {
+    font-style: italic;
+    width: 320px;
+    margin: auto;
+}
+.section .tombol {
+    margin: 10px 0 10px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: 0.5s;
+}
+
+.section .tombol:hover {
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.section .date-time {
+    display: grid;
+    grid-template-rows: 50px 70px auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 60%;
+    margin: 0 auto;
+}
+.section .date-time .box {
+    margin-top: 10px !important;
+    border: 2px solid rgb(34, 34, 34);
+    border-radius: 10px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+}
+.section .date-time .box:hover{
+    background-color: rgb(240, 214, 184);
+    padding: 2px;
+    cursor: grab;
+}
+.section .date-time .box h6 {
+    font-size: 20px;
+    margin: auto;
+}
+.section .date-time .box .text {
+    margin: 15px auto 0;
+    font-size: 14px !important;
+}
+
+/* Gallery  */
+#gallery {
+    height: 600px;
+    margin: 20px auto;
+}
+.section .gallery {
+    height: 580px;
+    background-color: rgba(250, 232, 210, 0.548);
+    border-radius: 12px;
+    padding-top: 20px;
+    margin: 20px auto 0;
+}
+.section .gallery .title {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 1px;
+    padding: 30px 0 0;
+}
+.section .gallery .heading-foto {
+    width: 300px;
+    height: 360px;
+    margin: auto;
+    background-color: rgba(105, 89, 89, 0);
+    border-radius: 12px;
+    overflow: auto;
+    overflow: hidden;
+}
+.section .gallery .heading-foto .sliders {
+    width: 510%;
+    height: 550px;
+    margin: 10px 0 0 10px;
+    background-color: rgba(245, 245, 245, 0.075);
+    display: flex;
+}
+.gallery .sliders .thumb img {
+    display: none;
+}
+.gallery input {
+    display: none;
+}
+.gallery .slide {
+    width: 19.4%;
+    transition: 1s;
+}
+.gallery .slide img {
+    max-width: 280px;
+    border-radius: 12px;
+}
+/* CSS FOR MANUAL SLIDER */
+.navigation-manual {
+    position: absolute;
+    padding: 0 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    margin-top: -195px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-manual img {
+    max-width: 80px;
+}
+
+.manual-btn {
+    /* border: 2px solid rgb(253, 225, 225); */
+    box-shadow: 0 1px 2px rgb(238, 228, 228);
+    padding: 0px;
+    /* margin: 10px 3px 0; */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.manual-btn:hover::before {
+    content: '<<🖤>>';
+    background: rgba(255, 253, 253, 0.849);
+    opacity: .9;
+    color: rgb(68, 60, 60);
+    padding: 40px 6.9px;
+    position: absolute;
+}
+#radio1:checked ~ .first {
+    margin-left: -0.8%;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -39.2%;
+}
+#radio4:checked ~ .first {
+    margin-left: -59%;
+}
+/* End Gallery */
+
+/* Mempelai */
+#mempelai .acara p {
+    width: 300px;
+    margin: auto;
+}
+.mempelai h2 {
+    font-family: 'Font h2';
+    font-weight: 600;
+    font-size: 18px;
+    margin: 30px 0 20px;
+    letter-spacing: 0.2px;
+    color: #303030;
+    text-shadow: 1px 7px 3px rgb(241, 199, 157);
+}
+.mempelai .text-mempelai {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.section {
+    background-image: url(img/bg/bg-content.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 860px;
+    width: 100%;
+    margin: 20px auto 20px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 4px #9c8e7c;
+}
+.section .acara {
+    width: 350px;
+    margin: 30px auto 0;
+}
+.section .mempelai {
+    width: 300px;
+    margin: auto;
+}
+
+.section .mempelai img {
+    max-width: 200px;
+}
+.mempelai .logo {
+    background-image: url(logo/diamond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+/* SECTION ACARA */
+.save-date {
+    height: 950px;
+}
+#save-date {
+    display: grid;
+    grid-template-rows: 278px 299px;
+    grid-template-columns: 100%;
+}
+#save-date .box {
+    margin: 3px;
+    background-color: rgba(248, 236, 221, 0.281);
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transition: 0.5s;
+    box-shadow: 1px 2px 6px tan;
+    box-sizing: border-box;
+}
+#save-date .box:hover {
+    padding: 0px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(248, 236, 221, 0.774);
+    box-shadow: 4px 7px 8px tan;
+    cursor: pointer;
+}
+#save-date .box .waktu {
+    /* width: 180px; */
+    margin: auto;
+}
+#save-date .garis {
+    margin: 1px 60px 15px;
+}
+#save-date h3 {
+    font-family: 'Font h2';
+    font-weight: 600;
+    padding-top: 20px;
+    line-height: 1cm;
+    letter-spacing: 1.5px;
+}
+#save-date p {
+    font-size: 18px;
+}
+#save-date h5 {
+    font-size: 22px;
+}
+.save-date .gmap {
+    margin-top: 20px;
+    width: 310px;
+    height: 230px;
+    box-shadow: 10px 1px 2px #EEDFCA;
+}
+
+/* Pwnutup */
+.penutup {
+    height: 730px;
+}
+.penutup img {
+    max-width: 280px;
+}
+.penutup h3 {
+    font-family: "Font h2";
+    text-shadow: 1px 2px 3px #d8c69f;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+/* Ucapan */
+#ucapan {
+    height: 400px;
+    margin-top: 30px;
+}
+#ucapan textarea {
+    height: 90px;
+}
+
+/* Amplog */
+.bg-amplop {
+    opacity: .9;
+}
+
+/* ScroolMenu */
+div.scrollmenu {
+    background-color: rgb(252, 236, 223);
+    overflow: auto;
+    white-space: nowrap;
+    /* width: 80%; */
+    border-radius: 9px;
+    margin: auto
+}
+  
+div.scrollmenu a {
+    display: inline-block;
+    color: rgb(58, 58, 58);
+    text-align: center;
+    font-weight: 500;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: rgba(209, 202, 187, 0.842);
+}
+/* End Animasi */
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 768px) { 
+
+    .heading {
+        background-image: url(img/header.jpeg);
+        background-position: center;
+        height: 700px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .heading::after {
+        width: 70%;
+        height: 700px;
+        background-image: linear-gradient(to top, #EEDFCA, rgba(250, 235, 215, 0.24), rgba(250, 235, 215, 0.05), rgba(221, 221, 221, 0));
+    }
+    /* PEMBUKAAN */
+    #pembukaan {
+        height: 620px;
+    }
+    .section .pembukaan img {
+        max-width: 300px;
+    }
+    .section h1 {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+    .section .undang {
+        margin-top: 50px !important;
+        width: 670px;
+        font-style: italic;
+        font-size: 20px;
+        margin: auto;
+    }
+    .section .tombol {
+        margin: 20px 0 10px;
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 12px;
+        transition: 0.5s;
+    }
+    
+    .section .tombol:hover {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .section .date-time {
+        margin-top: 25px !important;
+        margin-bottom: 35px;
+    }
+    .section .date-time .box {
+        width: 110px;
+        height: 90px;
+        border-radius: 11px;
+    }
+    .section .date-time .box h6 {
+        font-size: 40px;
+        font-weight: 600;
+        margin: auto;
+    }
+    .section .date-time .box .text {
+        background-color: rgba(192, 182, 140, 0.61);
+        border-radius: 5px;
+        margin: 8px auto 0;
+        font-size: 16px !important;
+    }
+    .section #acara-telahMulai {
+        text-shadow: 1px 2px 5px rgba(192, 182, 140, 0.856);
+    }
+    /* End Pembukaan */
+    
+    .section {
+        height: 1050px;
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .section .acara {
+        width: 900px;
+        margin: 30px auto 0;
+        transition: .6s;
+    }
+
+    #mempelai {
+        height: 860px;
+        border-radius: 20px;
+    }
+    #mempelai .acara p {
+        width: 700px;
+        margin: auto;
+    }
+    .section .acara:hover {
+        font-size: 20px;
+        cursor: zoom-in;
+    }
+    .section .mempelai {
+        width: 600px;
+        margin: auto;
+    }
+    .mempelai h2 {
+        font-family: 'Font h2';
+        font-weight: 600;
+        font-size: 30px;
+        margin: 50px 0 30px;
+    }
+    .section .mempelai img {
+        margin-top: 30px;
+        max-width: 260px;
+        transition: .8s;
+    }
+    
+    .section .mempelai img:hover {
+        max-width: 290px;
+        cursor: zoom-in;
+    }
+    
+    /* SECTION ACARA */
+    #save-date {
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns: 50% 50%;
+    }
+    #save-date .box {
+        margin: 30px;
+    }
+
+    #save-date .garis {
+        margin: 18px 70px;
+    }
+    #save-date .box .waktu {
+        width: 300px;
+        margin: auto;
+    }
+    #save-date h3 {
+        font-family: 'Font h2';
+        font-weight: 600;
+        line-height: 1cm;
+        letter-spacing: 1.5px;
+    }
+    #save-date p {
+        font-size: 18px;
+    }
+    #save-date h5 {
+        font-size: 22px;
+    }
+    .save-date .gmap {
+        margin-top: 20px;
+        width: 680px;
+        height: 430px;
+        box-shadow: 10px 2px 5px #EEDFCA;
+        border-radius: 20px;
+        border:1px solid rgb(177, 170, 157);
+    }
+
+    /* Gallery */
+    #gallery {
+        height: 730px;
+        margin: 20px auto;
+    }
+    .section .gallery {
+        height: 700px;
+        width: 65%;
+    }
+    .section .gallery .heading-foto {
+        width: 600px;
+        height: 500px;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .section .gallery .heading-foto .sliders {
+        width: 500%;
+    }
+    .gallery .slide {
+        width: 20%;
+        transition: 2s;
+    }
+    .gallery .slide img {
+        max-width: 300px;
+        margin: 13px 100px 10px 90px;
+        border-radius: 10px;
+    }
+    .navigation-manual img {
+        max-width: 200px;
+        margin: 10px;
+    }
+    /* CSS FOR MANUAL SLIDER */
+    .navigation-manual {
+        margin-top: -150px;
+    }
+    .manual-btn {
+        margin: 10px 3px 0;
+        border-radius: 6px;
+    }
+    .manual-btn:hover::before {
+        content: '===🖤===';
+        background: rgba(190, 190, 190, 0.541);
+        opacity: .6;
+        color: rgb(68, 60, 60);
+        margin: 10px 0 0 10px;
+        padding: 49px .96px;
+        position: absolute;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: -0%;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .first {
+        margin-left: -60%;
+    }
+    .penutup {
+        height: 835px;
+        border-radius: 20px;
+    }
+    .penutup img {
+        margin-top: 20px;
+        max-width: 480px;
+    }
+    
+    /* Menu Bottom */
+    div.scrollmenu {
+        text-align: center;
+        width: 100%;
+    }
+}
